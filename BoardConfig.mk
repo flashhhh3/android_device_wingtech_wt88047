@@ -54,7 +54,7 @@ TARGET_USE_VENDOR_CAMERA_EXT := true
 USE_DEVICE_SPECIFIC_CAMERA := true
 
 # Disable Jack & Jill compilation
-ANDROID_COMPILE_WITH_JACK := false
+ANDROID_COMPILE_WITH_JACK := true
 
 # DPM NSRM Feature
 TARGET_LDPRELOAD := libNimsWrap.so

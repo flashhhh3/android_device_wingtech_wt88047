@@ -97,17 +97,6 @@ PRODUCT_PACKAGES += \
     cneapiclient \
     com.quicinc.cne
 
-# DPM
-PRODUCT_PACKAGES += \
-    com.qti.dpmframework \
-    dpmapi
-
-# IMS
-PRODUCT_PACKAGES += \
-    init.qti.ims.sh \
-    ims \
-    imscmlibrary
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/ims/imscm.xml:system/etc/permissions/imscm.xml \
     $(LOCAL_PATH)/configs/ims/ims.xml:system/etc/permissions/ims.xml \

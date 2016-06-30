@@ -54,7 +54,7 @@ TARGET_USE_VENDOR_CAMERA_EXT := true
 USE_DEVICE_SPECIFIC_CAMERA := true
 
 # Disable Jack & Jill compilation
-ANDROID_COMPILE_WITH_JACK := false
+ANDROID_COMPILE_WITH_JACK := true
 
 # DPM NSRM Feature
 TARGET_LDPRELOAD := libNimsWrap.so
@@ -91,3 +91,9 @@ BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # inherit from the proprietary version
 -include vendor/wingtech/wt88047/BoardConfigVendor.mk
+
+# Kernel Toolchain
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-4.8/bin
+KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
+# Rom Toolchain
+TARGET_GCC_VERSION_EXP := 4.9
